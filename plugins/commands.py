@@ -13,4 +13,4 @@ texts = {
 async def start(client, message):
     await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
     time.sleep(2)
-    await message.reply_text(texts['start'], parse_mode=enums.ParseMode.MARKDOWN)
+    await message.reply(texts['start'], parse_mode=enums.ParseMode.MARKDOWN, quote=True)
