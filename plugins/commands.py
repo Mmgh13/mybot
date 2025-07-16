@@ -11,5 +11,5 @@ texts = {
 # start commands
 @Client.on_message(filters.command(["start", 'help']))
 async def start(client, message):
-    client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
+    await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
     await message.reply(texts['start'], parse_mode=enums.ParseMode.MARKDOWN)
