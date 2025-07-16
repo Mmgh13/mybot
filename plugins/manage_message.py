@@ -17,7 +17,7 @@ used = []
 
 @Client.on_message(filters.group, group=1)
 async def group(client, message):
-    if message.from_user.username == 'Py_mahdi':
+    if message.from_user.username == 'Aryanzahedifar1':
         await message.reply_chat_action(enums.ChatAction.TYPING)
         time.sleep(2)
         await message.reply_text(choice(texts), quote=True)
