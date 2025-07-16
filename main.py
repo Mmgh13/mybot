@@ -1,24 +1,9 @@
 # libraries
-from pyrogram import Client, filters
+from pyrogram import Client
 from api import *
 
-
-
 # settings
-app = Client("my_account", api_hash=api_hash, api_id=api_id, bot_token=token)
-
-
-# body
-
-@app.on_message(filters.command("start"))
-async def start(client, message):
-    await client.send_message(message.chat.id, 'hello bro mahdi')
-
-# with app:
-#     session_string = app.export_session_string()
-#     print((session_string, 'is this'))
-app.run()
-
-
+plugins = dict(root='plugins')
+Client('my_bot', api_id, api_hash, bot_token, plugins=plugins).run()
 
 
