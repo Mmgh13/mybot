@@ -1,4 +1,4 @@
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 
 
 
@@ -11,4 +11,5 @@ texts = {
 # start commands
 @Client.on_message(filters.command(["start", 'help']))
 async def start(client, message):
-    await message.reply(texts['start'])
+
+    await message.reply(texts['start'], parse_mode=enums.ParseMode.MARKDOWN)
