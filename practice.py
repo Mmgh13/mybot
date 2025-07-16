@@ -1,9 +1,9 @@
 # libraries
-from pyrogram import Client, filters
-from api import *
+# from pyrogram import Client, filters
+# from api import *
 
 # settings
-app = Client("my_account", api_hash=api_hash, api_id=api_id, bot_token=token)
+# app = Client("my_account", api_hash=api_hash, api_id=api_id, bot_token=token)
 
 
 # body
