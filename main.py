@@ -2,15 +2,10 @@
 from pyrogram import Client, filters
 from api import *
 
-proxy = {
-    "scheme": "mtproto",
-    'hostname':'Focos-mokos.berlino-landcvixo.yokohama-1borino.eromatic.info',
-    'port': 443,
 
-}
 
 # settings
-app = Client("my_account", api_hash=api_hash, api_id=api_id, bot_token=token, proxy=proxy)
+app = Client("my_account", api_hash=api_hash, api_id=api_id, bot_token=token)
 
 
 # body
